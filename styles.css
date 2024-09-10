@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+}
+
+body {
+  height: 100vh;
+  background-color: #009ce9;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.poke-logo {
+  height: 300px;
+  margin: 25px 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  width: 325px;
+  margin: 25px 0;
+  background-color: #e5f0ff;
+  border: 1px solid #e5f0ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(229, 240, 255, 0.5);
+}
+
+#search-form, .output-container {
+  display: flex;
+  justify-content: center;
+}
+
+#search-form {
+  flex-wrap: wrap;
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+label {
+  align-self: center;
+  color: #000;
+}
+
+#search-button {
+  padding: 14px 0;
+  width: 80px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(65, 5, 5, 0.966);
+  color: white;
+  border: none;
+}
+
+.output-container {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-container {
+  margin: 15px 0; /* Margin for top container */
+  padding: 10px;
+}
+
+.top-container .name-and-id,
+.top-container .size {
+  color: #333; /* Ensure text color applies to these elements */
+}
+
+.bottom-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 325px;
+}
+
+.name-and-id {
+  height: 28px;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.size {
+  height: 22px;
+  font-size: 0.85rem;
+}
+
+.sprite-container {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sprite {
+  width: 180px;
+}
+
+#types {
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 1rem;
+  color: #F0F3F5;
+  background-color: #7f21ab;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 4px ;
+  text-align: center;
+}
+
+th, td {
+  height: 30px;
+  min-width: 50px;
+  overflow: hidden;
+}
+
+th:nth-child(even), td:nth-child(even) {
+  border-left: 5px solid #f5f6f7;
+}
+
+tr {
+  border-bottom: 5px solid #fff;
+}
+
+#search-form button:hover {
+  background-color: #4a3a50;
+}
